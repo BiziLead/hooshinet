@@ -560,6 +560,23 @@ PREAMBLE
   text-align: justify;
   text-align-last: start;
 }
+
+.drawer-actions {
+  flex: none;
+  margin-block-start: auto;
+  padding: 12px 16px max(14px, env(safe-area-inset-bottom));
+  border-block-start: 1px solid var(--line);
+}
+.drawer-login {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 44px;
+  padding: 7px 13px;
+  text-decoration: none;
+}
+.drawer-login:hover { filter: brightness(1.08); }
 </style>
 </head>
 <body>
@@ -611,40 +628,39 @@ PREAMBLE
 <li><button type="button" data-jump="current-messaging"><span aria-hidden="true">۰۶</span>ارسال گروهی پیام</button></li>
 <li><button type="button" data-jump="current-comments"><span aria-hidden="true">۰۷</span>گردش کار کامنت</button></li>
 <li><button type="button" data-jump="current-content"><span aria-hidden="true">۰۸</span>تولید و انتشار محتوا</button></li>
-<li><button type="button" data-jump="current-automation"><span aria-hidden="true">۰۹</span>اتوپایلوت، دانش و تحلیل تماس</button></li>
-<li><button type="button" data-jump="current-market"><span aria-hidden="true">۱۰</span>رصد بازار و ابزارهای معاملاتی</button></li>
-<li><button type="button" data-jump="current-issuers"><span aria-hidden="true">۱۱</span>تحلیل شرکت‌ها و ناشران</button></li>
-<li><button type="button" data-jump="current-partners"><span aria-hidden="true">۱۲</span>درآمد، همکاران و سفارش خدمات</button></li>
 </ul>
 </details></li>
 <li class="path-node"><details class="chapter-summary" name="chapter-menu" data-chapter="product">
 <summary><span class="path-index">۳</span><span class="path-copy"><span class="path-name">توسعه‌ی هوشینت<span class="path-state">فصل فعال</span></span><span class="path-description">قابلیت‌هایی که به سامانه اضافه می‌شوند</span></span><span class="path-chevron" aria-hidden="true"></span></summary>
 <ul class="chapter-slides">
-<li><button type="button" data-jump="operation"><span aria-hidden="true">۱۳</span>یک درخواست از ابتدا تا نتیجه</button></li>
-<li><button type="button" data-jump="agent"><span aria-hidden="true">۱۴</span>پیشنهاد متن و بررسی نتیجه</button></li>
-<li><button type="button" data-jump="technology"><span aria-hidden="true">۱۵</span>مدیریت چند حساب</button></li>
-<li><button type="button" data-jump="electronics"><span aria-hidden="true">۱۶</span>دریافت پیامک از سیم‌کارت</button></li>
-<li><button type="button" data-jump="authentication"><span aria-hidden="true">۱۷</span>وضعیت ورود حساب‌ها</button></li>
+<li><button type="button" data-jump="operation"><span aria-hidden="true">۰۹</span>یک درخواست از ابتدا تا نتیجه</button></li>
+<li><button type="button" data-jump="agent"><span aria-hidden="true">۱۰</span>پیشنهاد متن و بررسی نتیجه</button></li>
+<li><button type="button" data-jump="technology"><span aria-hidden="true">۱۱</span>مدیریت چند حساب</button></li>
+<li><button type="button" data-jump="electronics"><span aria-hidden="true">۱۲</span>دریافت پیامک از سیم‌کارت</button></li>
+<li><button type="button" data-jump="authentication"><span aria-hidden="true">۱۳</span>وضعیت ورود حساب‌ها</button></li>
 </ul>
 </details></li>
 <li class="path-node"><details class="chapter-summary" name="chapter-menu" data-chapter="pilot">
 <summary><span class="path-index">۴</span><span class="path-copy"><span class="path-name">پایلوت و ارزیابی<span class="path-state">فصل فعال</span></span><span class="path-description">آزمون ظرفیت، معیار پذیرش و برآورد هزینه</span></span><span class="path-chevron" aria-hidden="true"></span></summary>
 <ul class="chapter-slides">
-<li><button type="button" data-jump="pilot"><span aria-hidden="true">۱۸</span>دامنه‌ی پایلوت</button></li>
-<li><button type="button" data-jump="demo"><span aria-hidden="true">۱۹</span>شبیه‌سازی ۱۰۰ حساب</button></li>
-<li><button type="button" data-jump="evaluation"><span aria-hidden="true">۲۰</span>معیار پذیرش و ریسک‌ها</button></li>
-<li><button type="button" data-jump="budget"><span aria-hidden="true">۲۱</span>بودجه و زمان‌بندی</button></li>
-<li><button type="button" data-jump="roadmap"><span aria-hidden="true">۲۲</span>مسیر توسعه‌ی محصول</button></li>
+<li><button type="button" data-jump="pilot"><span aria-hidden="true">۱۴</span>دامنه‌ی پایلوت</button></li>
+<li><button type="button" data-jump="demo"><span aria-hidden="true">۱۵</span>شبیه‌سازی ۱۰۰ حساب</button></li>
+<li><button type="button" data-jump="evaluation"><span aria-hidden="true">۱۶</span>معیار پذیرش و ریسک‌ها</button></li>
+<li><button type="button" data-jump="budget"><span aria-hidden="true">۱۷</span>بودجه و زمان‌بندی</button></li>
+<li><button type="button" data-jump="roadmap"><span aria-hidden="true">۱۸</span>مسیر توسعه‌ی محصول</button></li>
 </ul>
 </details></li>
 <li class="path-node"><details class="chapter-summary" name="chapter-menu" data-chapter="partnership">
 <summary><span class="path-index">۵</span><span class="path-copy"><span class="path-name">پیشنهاد همکاری<span class="path-state">فصل فعال</span></span><span class="path-description">زمینه‌های احتمالی برای همکاری مشترک</span></span><span class="path-chevron" aria-hidden="true"></span></summary>
 <ul class="chapter-slides">
-<li><button type="button" data-jump="collaboration"><span aria-hidden="true">۲۳</span>فرصت همکاری پیرامون هوشینت</button></li>
-<li><button type="button" data-jump="closing"><span aria-hidden="true">۲۴</span>پایان ارائه</button></li>
+<li><button type="button" data-jump="collaboration"><span aria-hidden="true">۱۹</span>فرصت همکاری پیرامون هوشینت</button></li>
+<li><button type="button" data-jump="closing"><span aria-hidden="true">۲۰</span>پایان ارائه</button></li>
 </ul>
 </details></li>
 </ol></nav>
+<div class="drawer-actions">
+<a class="primary drawer-login" href="https://admin.mrprx.ir/" target="_blank" rel="noopener noreferrer" aria-label="ورود به سامانه، در زبانه‌ی جدید">ورود به سامانه<span aria-hidden="true">↗</span></a>
+</div>
 </div>
 </dialog>
 <main id="main">
@@ -691,7 +707,7 @@ PREAMBLE
 <div class="chapter-band">
 <span class="chapter-index">فصل ۲</span>
 <span class="chapter-heading"><span class="chapter-name">سامانه‌ی فعلی</span><span class="chapter-question">کاربرد امکاناتی که امروز در پنل دیده می‌شوند</span></span>
-<span class="chapter-location">اسلاید ۱ از ۱۰</span>
+<span class="chapter-location">اسلاید ۱ از ۶</span>
 </div>
 <div class="page-heading">
 <h2 id="current-desk-title" tabindex="-1">داشبورد، برندها و دسترسی‌ها</h2>
@@ -709,7 +725,7 @@ PREAMBLE
 <div class="chapter-band">
 <span class="chapter-index">فصل ۲</span>
 <span class="chapter-heading"><span class="chapter-name">سامانه‌ی فعلی</span></span>
-<span class="chapter-location">اسلاید ۲ از ۱۰</span>
+<span class="chapter-location">اسلاید ۲ از ۶</span>
 </div>
 <div class="page-heading">
 <h2 id="current-sales-title" tabindex="-1">مدیریت مشتری و فرایند فروش</h2>
@@ -726,7 +742,7 @@ PREAMBLE
 <div class="chapter-band">
 <span class="chapter-index">فصل ۲</span>
 <span class="chapter-heading"><span class="chapter-name">سامانه‌ی فعلی</span></span>
-<span class="chapter-location">اسلاید ۳ از ۱۰</span>
+<span class="chapter-location">اسلاید ۳ از ۶</span>
 </div>
 <div class="page-heading">
 <h2 id="current-marketing-title" tabindex="-1">جذب مخاطب و اندازه‌گیری کمپین</h2>
@@ -743,7 +759,7 @@ PREAMBLE
 <div class="chapter-band">
 <span class="chapter-index">فصل ۲</span>
 <span class="chapter-heading"><span class="chapter-name">سامانه‌ی فعلی</span></span>
-<span class="chapter-location">اسلاید ۴ از ۱۰</span>
+<span class="chapter-location">اسلاید ۴ از ۶</span>
 </div>
 <div class="page-heading">
 <h2 id="current-messaging-title" tabindex="-1">ارسال گروهی و پیگیری پیام‌ها</h2>
@@ -759,7 +775,7 @@ PREAMBLE
 <div class="chapter-band">
 <span class="chapter-index">فصل ۲</span>
 <span class="chapter-heading"><span class="chapter-name">سامانه‌ی فعلی</span></span>
-<span class="chapter-location">اسلاید ۵ از ۱۰</span>
+<span class="chapter-location">اسلاید ۵ از ۶</span>
 </div>
 <div class="page-heading">
 <h2 id="current-comments-title" tabindex="-1">ثبت، تأیید و پیگیری کامنت</h2>
@@ -776,7 +792,7 @@ PREAMBLE
 <div class="chapter-band">
 <span class="chapter-index">فصل ۲</span>
 <span class="chapter-heading"><span class="chapter-name">سامانه‌ی فعلی</span></span>
-<span class="chapter-location">اسلاید ۶ از ۱۰</span>
+<span class="chapter-location">اسلاید ۶ از ۶</span>
 </div>
 <div class="page-heading">
 <h2 id="current-content-title" tabindex="-1">تولید محتوا از سوژه تا تقویم انتشار</h2>
@@ -786,71 +802,6 @@ PREAMBLE
 <article class="capability-card"><h3>پیدا کردن سوژه و آماده‌سازی پیش‌نویس</h3><p>ترندهای خبری به پیدا کردن موضوع کمک می‌کنند. در استودیو محتوا می‌توان با مشخص‌کردن هدف و مخاطب، برای پست، استوری، ریلز یا محتوای کانال پیش‌نویس گرفت. نوت‌بوک برای نگه‌داشتن ایده‌ها و یادداشت‌های کاری در کنار استودیو قرار دارد.</p></article>
 <article class="capability-card"><h3>آماده‌سازی تصویر، ویدیو و متن تولید</h3><p>کارگاه تصویر و ویدیو برای آماده‌سازی محتوای بصری در نظر گرفته شده است. بخش اسکریپت‌ها نیز به تیم تولید کمک می‌کند متن و مسیر اجرای محتوایی مانند ویدیو را در دسترس داشته باشد.</p></article>
 <article class="capability-card"><h3>تأیید و برنامه‌ی انتشار</h3><p>پیش‌نویس در مرکز تأیید برای بازبینی نفر دوم قرار می‌گیرد. تقویم انتشار زمان انتشار را نشان می‌دهد. تلگرام، بله، روبیکا، لینکدین، فیس‌بوک و یوتیوب در تنظیمات کانال‌های انتشار محتوای تأییدشده فهرست شده‌اند.</p></article>
-</div>
-</section>
-<section class="screen capability-slide" id="current-automation" data-screen data-chapter="current" aria-labelledby="current-automation-title" hidden>
-<div class="chapter-band">
-<span class="chapter-index">فصل ۲</span>
-<span class="chapter-heading"><span class="chapter-name">سامانه‌ی فعلی</span></span>
-<span class="chapter-location">اسلاید ۷ از ۱۰</span>
-</div>
-<div class="page-heading">
-<h2 id="current-automation-title" tabindex="-1">اتوپایلوت، پایگاه دانش و تحلیل تماس</h2>
-<p class="lead">سامانه برای بررسی ورودی‌های پرتکرار و آماده‌کردن اقدام پیشنهادی، چند امکان جداگانه در اختیار تیم می‌گذارد.</p>
-</div>
-<div class="capability-grid capability-grid--three">
-<article class="capability-card"><h3>بررسی پیام‌ها و فرم‌ها</h3><p>اتوپایلوت می‌تواند پیام‌ها و فرم‌های ورودی را بر اساس قواعد تعریف‌شده بررسی کند. شبیه‌ساز این بخش به کارشناس اجازه می‌دهد ببیند یک قاعده روی یک ورودی نمونه چه نتیجه‌ای می‌دهد.</p></article>
-<article class="capability-card"><h3>بازبینی انسانی و سابقه‌ی کار</h3><p>کارهایی که به نظر کارشناس نیاز دارند در صف تأیید انسانی دیده می‌شوند. گزارش اقدام‌ها برای پیگیری اینکه چه کاری پیشنهاد یا ثبت شده و در چه وضعیتی است، قابل مراجعه است.</p></article>
-<article class="capability-card"><h3>پاسخ‌ها و گفت‌وگوهای مشتری</h3><p>پایگاه دانش اطلاعات مرجع تیم را یکجا نگه می‌دارد و قالب‌های پیام متن‌های پرتکرار را در دسترس قرار می‌دهند. پنل برای تحلیل تماس‌ها و مرور گزارش‌ها نیز بخش جداگانه دارد.</p></article>
-</div>
-<p class="capability-note"><strong>نمونه‌ی کاربرد</strong><span>تیم می‌تواند قاعده‌ی رسیدگی به یک دسته از فرم‌های ورودی را روی نمونه امتحان کند و نتیجه‌ی پیشنهادی را برای بررسی کارشناس بفرستد.</span></p>
-</section>
-<section class="screen capability-slide" id="current-market" data-screen data-chapter="current" aria-labelledby="current-market-title" hidden>
-<div class="chapter-band">
-<span class="chapter-index">فصل ۲</span>
-<span class="chapter-heading"><span class="chapter-name">سامانه‌ی فعلی</span></span>
-<span class="chapter-location">اسلاید ۸ از ۱۰</span>
-</div>
-<div class="page-heading">
-<h2 id="current-market-title" tabindex="-1">رصد بازار سرمایه و ابزارهای معاملاتی</h2>
-<p class="lead">نماهای بازار برای سه نوع مراجعه طراحی شده‌اند. کاربر می‌تواند وضعیت روز را ببیند، سابقه‌ی یک نماد را بررسی کند یا نوع خاصی از ابزار مالی را پیدا کند.</p>
-</div>
-<div class="capability-grid capability-grid--three">
-<article class="capability-card"><h3>وضعیت امروز بازار</h3><p>نبض بازار، امروز بازار، شاخص‌های بورس، نقشه و خلاصه‌ی بازار و صنایع نمای کلی روز را نشان می‌دهند. دیدبان و فیلتر بازار، دیده‌بان کل بازارها و نمای جریان پول و صف‌ها برای محدودکردن بررسی به نمادها و جریان‌های موردنظر در دسترس‌اند.</p></article>
-<article class="capability-card"><h3>پیگیری نمادها و سوابق</h3><p>دیده‌بان من، هشدارها و تقویم بازار برای پیگیری نمادها و رویدادهای منتخب‌اند. برای بررسی گذشته هم نماهای بازدهی، دیدبان روزهای گذشته، سود نقدی همه‌ی شرکت‌ها، سهامداران عمده و ناظر و معاملات بلوکی و TAL وجود دارد. خروجی داده برای استفاده از اطلاعات بیرون از پنل در نظر گرفته شده است.</p></article>
-<article class="capability-card"><h3>ابزارها و بازارهای تخصصی</h3><p>بخش‌های اوراق و صکوک، اختیار معامله، آتی، سلف و تسهیلات مسکن و حق تقدم، ابزارها را دسته‌بندی می‌کنند. بورس کالا و انرژی و صندوق‌های سرمایه‌گذاری نیز نماهای جداگانه دارند.</p></article>
-</div>
-</section>
-<section class="screen capability-slide" id="current-issuers" data-screen data-chapter="current" aria-labelledby="current-issuers-title" hidden>
-<div class="chapter-band">
-<span class="chapter-index">فصل ۲</span>
-<span class="chapter-heading"><span class="chapter-name">سامانه‌ی فعلی</span></span>
-<span class="chapter-location">اسلاید ۹ از ۱۰</span>
-</div>
-<div class="page-heading">
-<h2 id="current-issuers-title" tabindex="-1">تحلیل شرکت‌ها، ناشران و فرصت‌ها</h2>
-<p class="lead">این ماژول‌ها برای وقتی کاربرد دارند که کاربر می‌خواهد از مشاهده‌ی وضعیت کلی بازار به بررسی شرکت‌های مشخص برسد.</p>
-</div>
-<div class="capability-grid capability-grid--three">
-<article class="capability-card"><h3>اطلاعات شرکت‌ها و ناشران بورسی</h3><p>پرونده‌ی شرکت‌ها اطلاعات هر شرکت را در یک نما گردآوری می‌کند. بخش ناشران کدال برای مراجعه به اطلاعیه‌ها و گزارش‌های شرکت‌های بورسی در نظر گرفته شده است. شبکه‌ی شرکت‌ها و فهرست حسابرسان معتمد بورس نیز برای بررسی ارتباط شرکت‌ها و اطلاعات حسابرسان در دسترس‌اند.</p></article>
-<article class="capability-card"><h3>مقایسه‌ی بنیادی شرکت‌ها</h3><p>فیلتر بنیادی برای محدودکردن فهرست شرکت‌ها بر اساس شاخص‌های مالی است. بخش‌های ارزش‌گذاری، رتبه‌بندی فروش ماهانه و ارزش خالص دارایی شرکت‌های سرمایه‌گذاری (NAV) نماهای دیگری برای مقایسه ارائه می‌کنند.</p></article>
-<article class="capability-card"><h3>مرور گزینه‌های قابل بررسی</h3><p>نقشه‌ی فرصت‌ها و سبدهای پیشنهادی، گزینه‌ها را برای بررسی بیشتر کنار هم قرار می‌دهند. کاربر می‌تواند پس از مرور اولیه، به پرونده‌ی شرکت یا نماهای بنیادی برگردد و جزئیات را ببیند.</p></article>
-</div>
-</section>
-<section class="screen capability-slide" id="current-partners" data-screen data-chapter="current" aria-labelledby="current-partners-title" hidden>
-<div class="chapter-band">
-<span class="chapter-index">فصل ۲</span>
-<span class="chapter-heading"><span class="chapter-name">سامانه‌ی فعلی</span></span>
-<span class="chapter-location">اسلاید ۱۰ از ۱۰</span>
-</div>
-<div class="page-heading">
-<h2 id="current-partners-title" tabindex="-1">درآمد، همکاران و سفارش خدمات</h2>
-<p class="lead">پنل بخش‌هایی برای مراجعه به اطلاعات درآمدی، پیگیری همکاری با نهادها و ثبت سفارش خدمات دارد.</p>
-</div>
-<div class="capability-grid capability-grid--three">
-<article class="capability-card"><h3>درآمد و کمیسیون همکاران</h3><p>نمای درآمد و بخش کمیسیون همکاران دو مسیر جدا برای مراجعه به اطلاعات مالی عملیات و مبالغ مربوط به همکاری هستند. فهرست نهادهای همکار نیز جای مشخصی در پنل دارد.</p></article>
-<article class="capability-card"><h3>سفارش گزارش و بازارگاه خدمات</h3><p>کاربر برای درخواست گزارش تحلیلی می‌تواند سفارش جدا ثبت کند. در بازارگاه نیز خدمات عرضه‌شده در یک بخش جمع شده‌اند تا کاربر خدمت موردنظر را پیدا کند.</p></article>
-<article class="capability-card"><h3>پرداخت اقساطی درمان</h3><p>بخش پرداخت اقساطی درمان به خدمتی اختصاص دارد که هزینه‌ی درمان را در چند قسط قابل پرداخت می‌کند. این گزینه در پنل کنار سایر خدمات معرفی شده است.</p></article>
 </div>
 </section>
 <section class="screen chapter-opener" id="operation" data-screen data-chapter="product" aria-labelledby="operation-title" hidden>
@@ -1057,7 +1008,7 @@ PREAMBLE
 </section>
 </main>
 <footer class="bottom">
-<div class="position"><span id="position">۰۱ از ۲۴</span><span class="track" aria-hidden="true"><i id="progress" style="width:4.17%"></i></span></div>
+<div class="position"><span id="position">۰۱ از ۲۰</span><span class="track" aria-hidden="true"><i id="progress" style="width:5%"></i></span></div>
 <span class="help">حرکت بین بخش‌ها با کلیدهای جهت‌نما</span>
 <div class="stepper"><button type="button" class="small" id="previous"><span class="nav-icon nav-icon--back" aria-hidden="true"></span>قبلی</button><button type="button" class="small" id="next">بعدی<span class="nav-icon" aria-hidden="true"></span></button></div>
 </footer>
